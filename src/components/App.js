@@ -12,11 +12,10 @@ const App = () => {
         type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
-        data-testid="name"
       />
       {
         name ? (
-          <p data-testid="greet-text">Hello, {name} !</p>
+          <p>Hello, {name} !</p>
         ) : null
       }
     </div>
